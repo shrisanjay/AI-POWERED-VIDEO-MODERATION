@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Detection Results</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f5f7fa;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    h2 {
+      font-size: 2.2rem;
+      margin-top: 40px;
+      color: #2c3e50;
+    }
+
+    .result-box {
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 30px;
+      max-width: 800px;
+      width: 90%;
+      margin-top: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .back-button {
+      margin-top: 30px;
+      padding: 10px 20px;
+      background-color: #3498db;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .back-button:hover {
+      background-color: #2980b9;
+    }
+
+    .footer {
+      margin-top: 40px;
+      font-size: 0.85rem;
+      color: #999;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Detection Results</h2>
+
+  <div class="result-box">
+    {{ output | safe }}
+  </div>
+
+  <form action="/" method="get">
+    <button class="back-button" type="submit">⬅ Back to Upload</button>
+  </form>
+
+  <div class="footer">
+    Powered by Flask, YOLOv8 & Whisper — Results generated dynamically
+  </div>
+
+</body>
+</html>

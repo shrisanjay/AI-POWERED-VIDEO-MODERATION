@@ -1,0 +1,5 @@
+train: C:/Users/HP/Pictures/restricted_content_detector_starter/data/train/images
+val: C:/Users/HP/Pictures/restricted_content_detector_starter/data/val/images
+
+nc: 2
+names: ['violence', 'nonviolence']
