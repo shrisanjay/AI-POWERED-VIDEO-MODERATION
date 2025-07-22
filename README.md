@@ -80,22 +80,6 @@ Edit
 ["damn", "hell", "shit", "fuck", "bitch", "violence", "kill", "murder", "rape", "terrorist"]
 You can edit the list in run_detection.py.
 
-📄 License
-This project is licensed under the MIT License.
-
-sql
-Copy
-Edit
-MIT License
-
-Copyright (c) 2025 Shri Sanjay
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-...
-👨‍💻 Author
-Shri Sanjay
-
-GitHub: @shrisanjay
 
 ✅ requirements.txt (Python side)
 txt
@@ -107,19 +91,3 @@ SpeechRecognition
 pydub
 ffmpeg-python
 You can use pip install -r requirements.txt to install them all.
-
-✅ .gitignore (Optional)
-txt
-Copy
-Edit
-node_modules/
-uploads/
-*.pyc
-__pycache__/
-venv/
-.env
-.DS_Store
-
-
-
-
